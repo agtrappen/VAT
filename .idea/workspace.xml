@@ -23,14 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VAT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/program.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/src/main/java/Test.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +58,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -91,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603127496277</updated>
       <workItem from="1603127497335" duration="31000" />
-      <workItem from="1603127610539" duration="183000" />
+      <workItem from="1603127610539" duration="1546000" />
     </task>
     <servers />
   </component>
@@ -114,5 +113,21 @@
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="448" y="89" key="#Project_Structure/0.23.1920.970@0.23.1920.970" timestamp="1603127679385" />
+    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603129160909">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603129160909" />
+    <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1603128129820">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser/0.23.1920.970@0.23.1920.970" timestamp="1603128129820" />
+    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603128970003">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.970@0.23.1920.970" timestamp="1603128970003" />
+    <state x="448" y="89" key="SettingsEditor" timestamp="1603129117045">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="448" y="89" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603129117045" />
   </component>
 </project>
