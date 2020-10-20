@@ -20,7 +20,7 @@ public class Main extends Application {
 
         BorderPane layout = new BorderPane();
 
-        layout.setCenter(blockView.getView());
+        layout.setCenter(mainView.getView());
         Scene view = new Scene(layout, 400, 300);
         stage.setTitle("VAT");
 

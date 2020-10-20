@@ -65,6 +65,8 @@ public class MainUI {
         optionLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         totalContentLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
+
+
         return layout;
     }
 }
