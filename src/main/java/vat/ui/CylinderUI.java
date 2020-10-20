@@ -9,7 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
-public class AddCylinderUI {
+public class CylinderUI {
     public Parent getView() {
         GridPane layout = new GridPane();
 
