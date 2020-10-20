@@ -18,15 +18,6 @@ public class Main extends Application {
         MainUI mainView = new MainUI();
 
         BorderPane layout = new BorderPane();
-        HBox menu = new HBox();
-        menu.setPadding(new Insets(20, 20, 20, 20));
-        menu.setSpacing(10);
-
-        Button enterButton = new Button("Enter new words");
-        Button practiceButton = new Button("Practice");
-
-        menu.getChildren().addAll(enterButton, practiceButton);
-        layout.setTop(menu);
 
         layout.setCenter(mainView.getView());
         Scene view = new Scene(layout, 400, 300);
