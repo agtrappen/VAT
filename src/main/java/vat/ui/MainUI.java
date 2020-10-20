@@ -6,11 +6,13 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 public class MainUI {
     public Parent getView() {
-        GridPane layout = new GridPane();
+        GridPane content = new GridPane();
+        SphereUI sphereView = new SphereUI();
 
         // Shape option
         Label optionLabel = new Label("Vorm");
@@ -43,29 +45,32 @@ public class MainUI {
         Button delteButton = new Button("Verwijder Vorm");
 
         // Styling
-        layout.setAlignment(Pos.CENTER);
-        layout.setVgap(10);
-        layout.setHgap(10);
-        layout.setPadding(new Insets(10, 10, 10, 10));
+        content.setAlignment(Pos.CENTER);
+        content.setVgap(10);
+        content.setHgap(10);
+        content.setPadding(new Insets(10, 10, 10, 10));
 
         // Set components
-        layout.add(optionLabel, 0, 0);
-        layout.add(shapeOptions, 0, 1);
-        layout.add(contentLabel, 0, 2);
-        layout.add(contentField, 0, 3);
-        layout.add(totalContentLabel, 0, 4);
-        layout.add(totalContentField, 0, 5);
-        layout.add(saveButton, 0, 7);
-        layout.add(loadButton, 0, 8);
-        layout.add(shapeList, 10, 0, 1, 3);
-        layout.add(totalButton, 10, 4);
-        layout.add(delteButton, 10, 5);
-        layout.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
+        content.add(optionLabel, 0, 0);
+        content.add(shapeOptions, 0, 1);
+        content.add(contentLabel, 0, 2);
+        content.add(contentField, 0, 3);
+        content.add(totalContentLabel, 0, 4);
+        content.add(totalContentField, 0, 5);
+        content.add(saveButton, 0, 7);
+        content.add(loadButton, 0, 8);
+        content.add(shapeList, 10, 0, 1, 3);
+        content.add(totalButton, 10, 4);
+        content.add(delteButton, 10, 5);
+        content.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
         contentLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         optionLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         totalContentLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
+        BorderPane layout = new BorderPane();
+        layout.setCenter(content);
 
+        shapeList.setOnMouseClicked((event) -> layout.setCenter(sphereView.getView()));
 
         return layout;
     }

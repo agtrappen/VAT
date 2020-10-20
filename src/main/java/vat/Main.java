@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import vat.ui.BlockUI;
+import vat.ui.SphereUI;
 import vat.ui.CylinderUI;
 import vat.ui.MainUI;
 
@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         MainUI mainView = new MainUI();
         CylinderUI cylinderView = new CylinderUI();
-        BlockUI blockView = new BlockUI();
+        SphereUI blockView = new SphereUI();
 
         BorderPane layout = new BorderPane();
 
