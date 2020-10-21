@@ -9,8 +9,13 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
+//Application
 public class MainUI {
-    public Parent getView() {
+    private Button saveButton;
+    private Button loadButton;
+    private BorderPane layout;
+
+    public MainUI(){
         GridPane content = new GridPane();
         SphereUI sphereView = new SphereUI();
 
@@ -28,8 +33,8 @@ public class MainUI {
         TextField totalContentField = new TextField();
 
         // Left action buttons
-        Button saveButton = new Button("Opslaan");
-        Button loadButton = new Button("Laad");
+        this.saveButton = new Button("Opslaan");
+        this.loadButton = new Button("Laad");
 
         // Shape list
         ListView<String> shapeList = new ListView<String>();
@@ -67,11 +72,19 @@ public class MainUI {
         optionLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         totalContentLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
-        BorderPane layout = new BorderPane();
+        this.layout = new BorderPane();
         layout.setCenter(content);
 
-        shapeList.setOnMouseClicked((event) -> layout.setCenter(sphereView.getView()));
+//        TODO:MouseClickevent op items in de shapelist
 
-        return layout;
+        shapeList.setOnMouseClicked((event) -> layout.setCenter(sphereView.getView()));
+    }
+
+
+    public Parent getView() {
+//        Locatie van listeners
+
+
+        return this.layout;
     }
 }

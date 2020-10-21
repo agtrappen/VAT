@@ -1,15 +1,14 @@
 package vat.ui;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 public class CylinderUI {
+
+
     public Parent getView() {
         GridPane layout = new GridPane();
 

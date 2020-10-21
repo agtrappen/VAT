@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="VAT" />
-        <module name="vattest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="program" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

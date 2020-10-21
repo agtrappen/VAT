@@ -8,6 +8,10 @@ import vat.ui.SphereUI;
 import vat.ui.CylinderUI;
 import vat.ui.MainUI;
 
+//        Naar applicatie
+//        CylinderUI cylinderView = new CylinderUI();
+//        SphereUI blockView = new SphereUI();
+
 public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
@@ -15,8 +19,6 @@ public class Main extends Application {
 
     public void start(Stage stage) throws Exception {
         MainUI mainView = new MainUI();
-        CylinderUI cylinderView = new CylinderUI();
-        SphereUI blockView = new SphereUI();
 
         BorderPane layout = new BorderPane();
 
