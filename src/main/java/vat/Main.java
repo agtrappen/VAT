@@ -4,8 +4,6 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import vat.ui.SphereUI;
-import vat.ui.CylinderUI;
 import vat.ui.MainUI;
 
 //        Naar applicatie

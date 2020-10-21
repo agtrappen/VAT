@@ -2,52 +2,70 @@ package vat.ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 //Application
 public class MainUI {
     private Button saveButton;
     private Button loadButton;
+    private Button totalButton;
+    private Button delteButton;
     private BorderPane layout;
+    private GridPane content;
+    private SphereUI sphereView;
+    private Label optionLabel;
+    private Label contentLabel;
+    private ObservableList<String> options;
+    private ComboBox shapeOptions;
+    private TextField contentField;
+    private Label totalContentLabel;
+    private TextField totalContentField;
+    private ListView<String> shapeList;
+    private ObservableList<String> items;
 
     public MainUI(){
-        GridPane content = new GridPane();
-        SphereUI sphereView = new SphereUI();
+        this.content = new GridPane();
+        this.sphereView = new SphereUI();
 
         // Shape option
-        Label optionLabel = new Label("Vorm");
-        ObservableList<String> options = FXCollections.observableArrayList ("bol", "blok", "cilinder");
-        ComboBox shapeOptions = new ComboBox(options);
+        this.optionLabel = new Label("Vorm");
+        this.options = FXCollections.observableArrayList ("Sphere", "Block", "Cylinder", "Cone", "Pyramid");
+        this.shapeOptions = new ComboBox(options);
 
         // Content shape
-        Label contentLabel = new Label("Inhoud");
-        TextField contentField = new TextField();
+        this.contentLabel = new Label("Inhoud");
+        this.contentField = new TextField();
 
         // Total content shape
-        Label totalContentLabel = new Label("Totale inhoud");
-        TextField totalContentField = new TextField();
+        this.totalContentLabel = new Label("Totale inhoud");
+        this.totalContentField = new TextField();
 
         // Left action buttons
         this.saveButton = new Button("Opslaan");
         this.loadButton = new Button("Laad");
 
         // Shape list
-        ListView<String> shapeList = new ListView<String>();
-        ObservableList<String> items =FXCollections.observableArrayList (
-                "Bol", "Blok", "Cilinder");
+        this.shapeList = new ListView<String>();
+        this.items =FXCollections.observableArrayList (
+                "Sphere", "Block", "Cylinder", "Cone", "Pyramid");
         shapeList.setItems(items);
         shapeList.setMaxHeight(200);
 
         // Total content button
-        Button totalButton = new Button("Totale inhoud");
+        this.totalButton = new Button("Totale inhoud");
 
         // Delete shape button
-        Button delteButton = new Button("Verwijder Vorm");
+        this.delteButton = new Button("Verwijder Vorm");
 
         // Styling
         content.setAlignment(Pos.CENTER);
@@ -77,7 +95,23 @@ public class MainUI {
 
 //        TODO:MouseClickevent op items in de shapelist
 
-        shapeList.setOnMouseClicked((event) -> layout.setCenter(sphereView.getView()));
+
+        shapeList.setOnMouseClicked((event)->{
+            System.out.println(shapeList.getSelectionModel().getSelectedIndices());
+        });
+
+//        shapeList.setOnMouseClicked((event)->{
+//            if(event.equals("block")){
+//                layout.setCenter(sphereView.getView());
+//            }
+////            layout.setCenter(sphereView.getView());
+//        });
+//        shapeList.setOnMouseClicked((event) -> {
+//            if (event.equals())
+//            layout.setCenter(sphereView.getView())
+//                });
+
+
     }
 
 
