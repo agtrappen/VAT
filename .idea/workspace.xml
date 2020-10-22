@@ -26,8 +26,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
