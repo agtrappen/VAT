@@ -8,22 +8,27 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import vat.models.Cone;
+import vat.models.Sphere;
 
 public class SphereUI {
+    GridPane layout = new GridPane();
+    private double ray;
+
+    public SphereUI(){
+
+    }
 
     public Parent getView() {
-        GridPane layout = new GridPane();
-
-        Label rayLabel = new Label("Straal");
+        Label rayLabel = new Label("Vul een straal in");
         TextField rayField = new TextField();
 
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
         Button saveButton = new Button("OK");
-        Button cancelButton = new Button("Annuleer");
 
-        buttons.getChildren().addAll(saveButton, cancelButton);
+        buttons.getChildren().addAll(saveButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -38,6 +43,19 @@ public class SphereUI {
         layout.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
         rayLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
-        return layout;
+//      Set listeners
+        saveButton.setOnAction(event -> {
+            String _ray = rayField.getText();
+            double ray = Double.parseDouble(_ray);
+            Sphere sphere = new Sphere(ray);
+            sphere.save(sphere);
+            rayField.clear();
+        });
+
+        return this.layout;
+    }
+
+    public void createShape(){
+
     }
 }

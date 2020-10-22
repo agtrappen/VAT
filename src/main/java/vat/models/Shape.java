@@ -1,6 +1,9 @@
 package vat.models;
 
 public interface Shape {
-    double calculateContent();
+
+    void save (Shape shape);
+    void delete (Shape shape);
+
 
 }

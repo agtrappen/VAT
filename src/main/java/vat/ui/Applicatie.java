@@ -14,6 +14,7 @@ import javafx.scene.layout.BorderRepeat;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import vat.models.Block;
 
 //Application
 public class Applicatie {

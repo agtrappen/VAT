@@ -8,22 +8,33 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import vat.models.Block;
+import vat.models.Pyramid;
 
 public class PyramidUI {
+    GridPane layout = new GridPane();
+    private double length;
+    private double width;
+    private double height;
+
+    public PyramidUI() {
+
+    }
 
     public Parent getView() {
-        GridPane layout = new GridPane();
-
-        Label rayLabel = new Label("Straal");
-        TextField rayField = new TextField();
+        Label lengthLabel = new Label("Vul een lengte in");
+        Label widthLabel = new Label("Vul een breedte in");
+        Label heightLabel = new Label("Vul een hoogte in");
+        TextField lengthField = new TextField();
+        TextField widthField = new TextField();
+        TextField heightField = new TextField();
 
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
         Button saveButton = new Button("OK");
-        Button cancelButton = new Button("Annuleer");
 
-        buttons.getChildren().addAll(saveButton, cancelButton);
+        buttons.getChildren().addAll(saveButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -32,12 +43,35 @@ public class PyramidUI {
         layout.setPadding(new Insets(10, 10, 10, 10));
 
         // Set components
-        layout.add(rayLabel, 0, 0);
-        layout.add(rayField, 0, 1);
-        layout.add(buttons, 0, 2);
+        layout.add(heightLabel, 0, 0);
+        layout.add(heightField, 0, 1);
+        layout.add(lengthLabel, 0, 2);
+        layout.add(lengthField, 0, 3);
+        layout.add(widthLabel, 0, 4);
+        layout.add(widthField, 0, 5);
+        layout.add(buttons, 0, 6);
         layout.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
-        rayLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
+        heightLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
+        lengthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
+        widthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
-        return layout;
+//      Set listeners
+//        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
+//            createShape();
+//        });
+        saveButton.setOnAction(event -> {
+            String _length = lengthField.getText();
+            String _height = heightField.getText();
+            String _width = widthField.getText();
+            double length = Double.parseDouble(_length);
+            double height = Double.parseDouble(_height);
+            double width = Double.parseDouble(_width);
+            Pyramid pyramid = new Pyramid(length, height, width);
+            pyramid.save(pyramid);
+            lengthField.clear();
+            heightField.clear();
+            widthField.clear();
+        });
+        return this.layout;
     }
 }

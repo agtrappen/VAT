@@ -21,8 +21,10 @@ public class BlockUI {
     private double height;
 
     public BlockUI() {
-        GridPane layout = new GridPane();
 
+    }
+
+    public Parent getView() {
         Label lengthLabel = new Label("Vul een lengte in");
         Label widthLabel = new Label("Vul een breedte in");
         Label heightLabel = new Label("Vul een hoogte in");
@@ -50,27 +52,34 @@ public class BlockUI {
         layout.add(lengthField, 0, 3);
         layout.add(widthLabel, 0, 4);
         layout.add(widthField, 0, 5);
-        layout.add(buttons, 0, 5);
+        layout.add(buttons, 0, 6);
         layout.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
         heightLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         lengthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         widthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
-        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
-            createShape();
+//        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
+//            createShape();
+//        });
+        saveButton.setOnAction(event -> {
+            String _length = lengthField.getText();
+            String _height = heightField.getText();
+            String _width = widthField.getText();
+            double length = Double.parseDouble(_length);
+            double height = Double.parseDouble(_height);
+            double width = Double.parseDouble(_width);
+            Block block = new Block(length, height, width);
+            block.save(block);
+            lengthField.clear();
+            heightField.clear();
+            widthField.clear();
         });
-
-
-//      Set Gridpane layout to layout
-        this.layout = layout;
-    }
-
-    public Parent getView() {
         return this.layout;
     }
-
-    public void createShape(){
-        Block test = new Block(this.length, this.height, this.width);
-    }
 }
+
+
+//    public void createShape(){
+//        Block test = new Block(this.length, this.height, this.width);
+//    }
