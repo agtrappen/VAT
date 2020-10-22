@@ -8,7 +8,6 @@ import javafx.scene.layout.GridPane;
 
 public class CylinderUI {
 
-
     public Parent getView() {
         GridPane layout = new GridPane();
 

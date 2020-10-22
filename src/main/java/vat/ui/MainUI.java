@@ -10,62 +10,81 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.BorderRepeat;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 //Application
 public class MainUI {
-    private Button saveButton;
-    private Button loadButton;
-    private Button totalButton;
-    private Button delteButton;
+    private Stage shapeStage;
     private BorderPane layout;
-    private GridPane content;
-    private SphereUI sphereView;
-    private Label optionLabel;
-    private Label contentLabel;
-    private ObservableList<String> options;
-    private ComboBox shapeOptions;
-    private TextField contentField;
-    private Label totalContentLabel;
-    private TextField totalContentField;
-    private ListView<String> shapeList;
-    private ObservableList<String> items;
 
     public MainUI(){
-        this.content = new GridPane();
-        this.sphereView = new SphereUI();
+        GridPane content = new GridPane();
+        SphereUI sphereView = new SphereUI();
+        BlockUI blockView = new BlockUI();
+        ConeUI coneView = new ConeUI();
+        CylinderUI cylinderView = new CylinderUI();
+        PyramidUI pyramidView = new PyramidUI();
+
+//      Set borderpanes
+        BorderPane blockLayout = new BorderPane();
+        blockLayout.setCenter(blockView.getView());
+
+        BorderPane coneLayout = new BorderPane();
+        coneLayout.setCenter(coneView.getView());
+
+        BorderPane cylinderLayout = new BorderPane();
+        cylinderLayout.setCenter(cylinderView.getView());
+
+        BorderPane pyramidLayout = new BorderPane();
+        pyramidLayout.setCenter(pyramidView.getView());
+
+        BorderPane sphereLayout = new BorderPane();
+        sphereLayout.setCenter(sphereView.getView());
+
+
+//      Set scenes
+        Scene blockScene = new Scene(blockLayout, 400, 300);
+        Scene coneScene = new Scene(coneLayout, 400, 300);
+        Scene cylinderScene = new Scene(cylinderLayout, 400, 300);
+        Scene pyramidScene = new Scene(pyramidLayout, 400, 300);
+        Scene sphereScene = new Scene(sphereLayout, 400, 300);
+
+//      Set stage
+        this.shapeStage = new Stage();
 
         // Shape option
-        this.optionLabel = new Label("Vorm");
-        this.options = FXCollections.observableArrayList ("Sphere", "Block", "Cylinder", "Cone", "Pyramid");
-        this.shapeOptions = new ComboBox(options);
+        Label optionLabel = new Label("Vorm");
+        ObservableList<String> options = FXCollections.observableArrayList ("Sphere", "Block", "Cylinder", "Cone", "Pyramid");
+        ComboBox<String> shapeOptions = new ComboBox<String>();
+        shapeOptions.setItems(options);
 
         // Content shape
-        this.contentLabel = new Label("Inhoud");
-        this.contentField = new TextField();
+        Label contentLabel = new Label("Inhoud");
+        TextField contentField = new TextField();
 
         // Total content shape
-        this.totalContentLabel = new Label("Totale inhoud");
-        this.totalContentField = new TextField();
+        Label totalContentLabel = new Label("Totale inhoud");
+        TextField totalContentField = new TextField();
 
         // Left action buttons
-        this.saveButton = new Button("Opslaan");
-        this.loadButton = new Button("Laad");
+        Button saveButton = new Button("Opslaan");
+        Button loadButton = new Button("Laad");
 
         // Shape list
-        this.shapeList = new ListView<String>();
-        this.items =FXCollections.observableArrayList (
+        ListView<String> shapeList = new ListView<String>();
+        ObservableList<String> items =FXCollections.observableArrayList (
                 "Sphere", "Block", "Cylinder", "Cone", "Pyramid");
         shapeList.setItems(items);
         shapeList.setMaxHeight(200);
 
         // Total content button
-        this.totalButton = new Button("Totale inhoud");
+        Button totalButton = new Button("Totale inhoud");
 
         // Delete shape button
-        this.delteButton = new Button("Verwijder Vorm");
+        Button deleteButton = new Button("Verwijder Vorm");
 
         // Styling
         content.setAlignment(Pos.CENTER);
@@ -84,7 +103,7 @@ public class MainUI {
         content.add(loadButton, 0, 8);
         content.add(shapeList, 10, 0, 1, 3);
         content.add(totalButton, 10, 4);
-        content.add(delteButton, 10, 5);
+        content.add(deleteButton, 10, 5);
         content.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
         contentLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
         optionLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
@@ -93,32 +112,39 @@ public class MainUI {
         this.layout = new BorderPane();
         layout.setCenter(content);
 
-//        TODO:MouseClickevent op items in de shapelist
-
-
+//      Get select item from the shapelist
         shapeList.setOnMouseClicked((event)->{
-            System.out.println(shapeList.getSelectionModel().getSelectedIndices());
+            String selectedItem = shapeList.getSelectionModel().getSelectedItem();
+            switch(selectedItem){
+                case "Sphere":
+                    this.shapeStage.setScene(sphereScene);
+                    this.shapeStage.show();
+                    break;
+                case "Block":
+                    this.shapeStage.setScene(blockScene);
+                    this.shapeStage.show();
+                    break;
+                case "Cone":
+                    this.shapeStage.setScene(coneScene);
+                    this.shapeStage.show();
+                    break;
+                case "Cylinder":
+                    this.shapeStage.setScene(cylinderScene);
+                    this.shapeStage.show();
+                    break;
+                case "Pyramide":
+                    this.shapeStage.setScene(pyramidScene);
+                    this.shapeStage.show();
+                    break;
+                default:
+                    System.out.println("Selected unsupported item" + selectedItem);
+            }
         });
-
-//        shapeList.setOnMouseClicked((event)->{
-//            if(event.equals("block")){
-//                layout.setCenter(sphereView.getView());
-//            }
-////            layout.setCenter(sphereView.getView());
-//        });
-//        shapeList.setOnMouseClicked((event) -> {
-//            if (event.equals())
-//            layout.setCenter(sphereView.getView())
-//                });
-
-
     }
 
 
     public Parent getView() {
 //        Locatie van listeners
-
-
         return this.layout;
     }
 }
