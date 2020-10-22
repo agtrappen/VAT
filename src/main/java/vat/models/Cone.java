@@ -15,5 +15,6 @@ public class Cone implements Shape {
 
     @Override
     public int calculateContent() {
+        return 0;
     }
 }

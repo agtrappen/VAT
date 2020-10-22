@@ -23,16 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="added all shapes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/MainUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,11 +137,11 @@
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="448" y="89" key="#Project_Structure/0.23.1920.970@0.23.1920.970" timestamp="1603208210152" />
-    <state x="274" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603314869662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="424" y="170" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603392262375">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="274" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603314869662" />
-    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603129160909" />
+    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603392262375" />
     <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603380612002">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
@@ -207,11 +203,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312730077" />
-    <state x="319" y="0" key="SettingsEditor" timestamp="1603312786958">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="448" y="89" key="SettingsEditor" timestamp="1603392249310">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="319" y="0" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312786958" />
-    <state x="448" y="89" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603129117045" />
+    <state x="448" y="89" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603392249310" />
     <state x="275" y="84" key="Vcs.Push.Dialog.v2" timestamp="1603318877814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
