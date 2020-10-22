@@ -16,11 +16,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 //Application
-public class MainUI {
+public class Applicatie {
     private Stage shapeStage;
     private BorderPane layout;
 
-    public MainUI(){
+    public Applicatie(){
         GridPane content = new GridPane();
         SphereUI sphereView = new SphereUI();
         BlockUI blockView = new BlockUI();
@@ -132,7 +132,7 @@ public class MainUI {
                     this.shapeStage.setScene(cylinderScene);
                     this.shapeStage.show();
                     break;
-                case "Pyramide":
+                case "Pyramid":
                     this.shapeStage.setScene(pyramidScene);
                     this.shapeStage.show();
                     break;
