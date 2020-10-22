@@ -52,7 +52,7 @@ public class ConeUI {
             createShape();
         });
 
-//      set Gridpane layout to layout
+//      Set Gridpane layout to layout
         this.layout = layout;
     }
 

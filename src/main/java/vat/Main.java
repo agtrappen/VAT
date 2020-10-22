@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import vat.ui.MainUI;
+import vat.ui.Applicatie;
 
 //        Naar applicatie
 //        CylinderUI cylinderView = new CylinderUI();
@@ -16,7 +16,7 @@ public class Main extends Application {
     }
 
     public void start(Stage stage) throws Exception {
-        MainUI mainView = new MainUI();
+        Applicatie mainView = new Applicatie();
 
         BorderPane layout = new BorderPane();
 

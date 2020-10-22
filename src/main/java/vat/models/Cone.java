@@ -6,14 +6,23 @@ public class Cone implements Shape {
     private double height;
     private double ray;
 
-    public Cone(double height, double ray){
+    public Cone(double height, double ray) {
         this.height = height;
         this.ray = ray;
     }
 
-
-
     @Override
-    public int calculateContent() {
+    public double calculateContent(){
+        return 10.0;
     }
+//    @Override
+//    public double calculateSurface(){
+//        return 10.0;
+//    }
+//    @Override
+//    public double calculateShape() {
+//        System.out.println("ters");
+//        return 10.0;
+//    }
+
 }
