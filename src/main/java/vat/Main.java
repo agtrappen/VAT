@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import vat.database.JDBCUtil;
 import vat.ui.Applicatie;
 
 //        Naar applicatie
@@ -16,6 +17,7 @@ public class Main extends Application {
     }
 
     public void start(Stage stage) throws Exception {
+        JDBCUtil db = new JDBCUtil();
         Applicatie mainView = new Applicatie();
 
         BorderPane layout = new BorderPane();

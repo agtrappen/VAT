@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class JDBCUtil {
     // Replace below database url, username and password with your actual database credentials
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/javafx_registration?useSSL=false";
+    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/vat?useSSL=false";
     private static final String DATABASE_USERNAME = "root";
     private static final String DATABASE_PASSWORD = "root";
     private static final String INSERT_QUERY = "INSERT INTO registration (full_name, email_id, password) VALUES (?, ?, ?)";

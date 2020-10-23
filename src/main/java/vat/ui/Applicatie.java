@@ -147,4 +147,20 @@ public class Applicatie {
 //        Locatie van listeners
         return this.layout;
     }
+
+    public void saveShape() {
+
+    }
+
+    public void loadShape() {
+
+    }
+
+    public void showContentShape() {
+
+    }
+
+    public void deleteShape() {
+        
+    }
 }
