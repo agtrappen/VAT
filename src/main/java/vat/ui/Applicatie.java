@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import vat.database.JDBCUtil;
 
 import java.sql.SQLException;
+import vat.models.Block;
 
 //Application
 public class Applicatie {

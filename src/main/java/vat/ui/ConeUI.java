@@ -9,16 +9,20 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import vat.models.Block;
+import vat.models.Cone;
 
 
 public class ConeUI {
+    GridPane layout = new GridPane();
     private double ray;
     private double height;
-    private final GridPane layout;
 
     public ConeUI(){
-        GridPane layout = new GridPane();
 
+    }
+
+    public Parent getView() {
         Label heightLabel = new Label("Vul een hoogte in");
         Label rayLabel = new Label("Vul een straal in");
         TextField heightField = new TextField();
@@ -48,15 +52,17 @@ public class ConeUI {
         heightLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
-        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
-            createShape();
+        saveButton.setOnAction(event -> {
+            String _height = heightField.getText();
+            String _ray = rayField.getText();
+            double height = Double.parseDouble(_height);
+            double ray = Double.parseDouble(_ray);
+            Cone cone = new Cone(height, ray);
+            cone.save(cone);
+            heightField.clear();
+            rayField.clear();
         });
 
-//      Set Gridpane layout to layout
-        this.layout = layout;
-    }
-
-    public Parent getView() {
         return this.layout;
     }
 
