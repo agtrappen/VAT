@@ -1,9 +1,11 @@
 package vat.database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.awt.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.*;
 
 
 public class JDBCUtil {
@@ -12,25 +14,53 @@ public class JDBCUtil {
     private static final String DATABASE_USERNAME = "root";
     private static final String DATABASE_PASSWORD = "";
     private static final String INSERT_QUERY = "UPDATE shapes SET content=? WHERE shape_name=?";
+    private static final String SELECT_QUERY = "SELECT * FROM shapes";
 
     public void insertShape(Double content, String shapeName) throws SQLException {
 
-        // Step 1: Establishing a Connection and
-        // try-with-resource statement will auto close the connection.
-        try (Connection connection = DriverManager
-                .getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
-
-             // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUERY)) {
+        try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUERY))
+        {
             preparedStatement.setDouble(1, content);
             preparedStatement.setString(2, shapeName);
 
-            System.out.println(preparedStatement);
-            // Step 3: Execute the query or update query
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            // print SQL exception information
             printSQLException(e);
+        }
+    }
+
+    public void loadShapes() throws SQLException {
+
+        try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
+             Statement statement = connection.createStatement();
+             ResultSet result = statement.executeQuery(SELECT_QUERY))
+        {
+            String csvFilePath = "shapes.csv";
+            BufferedWriter fileWriter = new BufferedWriter(new FileWriter(csvFilePath));
+            Desktop desktop = Desktop.getDesktop();
+
+            // write header line containing column names
+            fileWriter.write("id,content,shape_name");
+
+            while (result.next()) {
+                Integer id = result.getInt("id");
+                Double content = result.getDouble("content");
+                String shapeName = result.getString("shape_name");
+
+                String line = String.format("\"%s\",%s, %s",
+                        id, content, shapeName);
+
+                fileWriter.newLine();
+                fileWriter.write(line);
+            }
+
+            statement.close();
+            fileWriter.close();
+
+            desktop.open(new File(csvFilePath));
+        } catch (SQLException | IOException e) {
+            printSQLException((SQLException) e);
         }
     }
 

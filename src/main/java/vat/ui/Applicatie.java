@@ -9,10 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.BorderRepeat;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import vat.database.JDBCUtil;
 
@@ -22,7 +19,7 @@ import java.sql.SQLException;
 public class Applicatie {
     private Stage shapeStage;
     private BorderPane layout;
-    JDBCUtil db = new JDBCUtil();
+    private JDBCUtil db = new JDBCUtil();
 
     public Applicatie(){
         GridPane content = new GridPane();
@@ -31,6 +28,7 @@ public class Applicatie {
         ConeUI coneView = new ConeUI();
         CylinderUI cylinderView = new CylinderUI();
         PyramidUI pyramidView = new PyramidUI();
+        ExportUI exportView = new ExportUI();
         JDBCUtil db = new JDBCUtil();
 
 //      Set borderpanes
@@ -49,6 +47,9 @@ public class Applicatie {
         BorderPane sphereLayout = new BorderPane();
         sphereLayout.setCenter(sphereView.getView());
 
+        BorderPane exportLayout = new BorderPane();
+        exportLayout.setCenter(exportView.getView());
+
 
 //      Set scenes
         Scene blockScene = new Scene(blockLayout, 400, 300);
@@ -56,6 +57,7 @@ public class Applicatie {
         Scene cylinderScene = new Scene(cylinderLayout, 400, 300);
         Scene pyramidScene = new Scene(pyramidLayout, 400, 300);
         Scene sphereScene = new Scene(sphereLayout, 400, 300);
+        Scene exportScene = new Scene(exportLayout, 400, 300);
 
 //      Set stage
         this.shapeStage = new Stage();
@@ -153,6 +155,11 @@ public class Applicatie {
                 throwables.printStackTrace();
             }
         });
+
+        loadButton.setOnAction((event) -> {
+            this.shapeStage.setScene(exportScene);
+            this.shapeStage.show();
+        });
     }
 
 
@@ -163,10 +170,6 @@ public class Applicatie {
 
     public void saveShape(String shapeName, Double contentValue) throws SQLException {
         db.insertShape(contentValue, shapeName);
-    }
-
-    public void loadShape() {
-
     }
 
     public void showContentShape() {
