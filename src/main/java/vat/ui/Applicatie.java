@@ -14,11 +14,15 @@ import javafx.scene.layout.BorderRepeat;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import vat.database.JDBCUtil;
+
+import java.sql.SQLException;
 
 //Application
 public class Applicatie {
     private Stage shapeStage;
     private BorderPane layout;
+    JDBCUtil db = new JDBCUtil();
 
     public Applicatie(){
         GridPane content = new GridPane();
@@ -27,6 +31,7 @@ public class Applicatie {
         ConeUI coneView = new ConeUI();
         CylinderUI cylinderView = new CylinderUI();
         PyramidUI pyramidView = new PyramidUI();
+        JDBCUtil db = new JDBCUtil();
 
 //      Set borderpanes
         BorderPane blockLayout = new BorderPane();
@@ -140,6 +145,14 @@ public class Applicatie {
                     System.out.println("Selected unsupported item" + selectedItem);
             }
         });
+
+        saveButton.setOnAction((event) -> {
+            try {
+                saveShape(shapeOptions.getSelectionModel().getSelectedItem(), Double.valueOf(contentField.getText()));
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
     }
 
 
@@ -148,8 +161,8 @@ public class Applicatie {
         return this.layout;
     }
 
-    public void saveShape() {
-
+    public void saveShape(String shapeName, Double contentValue) throws SQLException {
+        db.insertShape(contentValue, shapeName);
     }
 
     public void loadShape() {
@@ -161,6 +174,6 @@ public class Applicatie {
     }
 
     public void deleteShape() {
-        
+
     }
 }

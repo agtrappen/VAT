@@ -10,11 +10,10 @@ public class JDBCUtil {
     // Replace below database url, username and password with your actual database credentials
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/vat?useSSL=false";
     private static final String DATABASE_USERNAME = "root";
-    private static final String DATABASE_PASSWORD = "root";
-    private static final String INSERT_QUERY = "INSERT INTO registration (full_name, email_id, password) VALUES (?, ?, ?)";
+    private static final String DATABASE_PASSWORD = "";
+    private static final String INSERT_QUERY = "UPDATE shapes SET content=? WHERE shape_name=?";
 
-
-    public void insertRecord(String fullName, String emailId, String password) throws SQLException {
+    public void insertShape(Double content, String shapeName) throws SQLException {
 
         // Step 1: Establishing a Connection and
         // try-with-resource statement will auto close the connection.
@@ -23,9 +22,8 @@ public class JDBCUtil {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUERY)) {
-            preparedStatement.setString(1, fullName);
-            preparedStatement.setString(2, emailId);
-            preparedStatement.setString(3, password);
+            preparedStatement.setDouble(1, content);
+            preparedStatement.setString(2, shapeName);
 
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
