@@ -7,7 +7,7 @@ public class Sphere {
         this.ray = ray;
     }
 
-    public void save(Sphere sphere) {
-        System.out.println(sphere);
+    public double calculate(Sphere sphere){
+        return sphere.ray;
     }
 }

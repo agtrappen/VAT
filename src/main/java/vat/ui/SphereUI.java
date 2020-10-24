@@ -8,12 +8,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import vat.models.Cone;
+import javafx.stage.Stage;
 import vat.models.Sphere;
 
 public class SphereUI {
     GridPane layout = new GridPane();
     private double ray;
+    private String name = "Sphere";
 
     public SphereUI(){
 
@@ -26,9 +27,10 @@ public class SphereUI {
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
+        Button closeButton = new Button("Cancel");
         Button saveButton = new Button("OK");
 
-        buttons.getChildren().addAll(saveButton);
+        buttons.getChildren().addAll(saveButton, closeButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -44,18 +46,21 @@ public class SphereUI {
         rayLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
+        closeButton.setOnAction(event ->{
+            Stage stage = (Stage) closeButton.getScene().getWindow();
+            stage.close();
+        });
+
         saveButton.setOnAction(event -> {
             String _ray = rayField.getText();
             double ray = Double.parseDouble(_ray);
             Sphere sphere = new Sphere(ray);
-            sphere.save(sphere);
+            double contentSphere = sphere.calculate(sphere);
+            Shape newShape = new Shape(this.name, contentSphere);
+            newShape.save(newShape);
             rayField.clear();
         });
 
         return this.layout;
-    }
-
-    public void createShape(){
-
     }
 }

@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
 import vat.models.Block;
 import vat.models.Cone;
 
@@ -17,6 +18,7 @@ public class ConeUI {
     GridPane layout = new GridPane();
     private double ray;
     private double height;
+    private String name = "Cone";
 
     public ConeUI(){
 
@@ -31,9 +33,10 @@ public class ConeUI {
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
+        Button closeButton = new Button("Cancel");
         Button saveButton = new Button("OK");
 
-        buttons.getChildren().addAll(saveButton);
+        buttons.getChildren().addAll(saveButton, closeButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -52,13 +55,20 @@ public class ConeUI {
         heightLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
+        closeButton.setOnAction(event ->{
+            Stage stage = (Stage) closeButton.getScene().getWindow();
+            stage.close();
+        });
+
         saveButton.setOnAction(event -> {
             String _height = heightField.getText();
             String _ray = rayField.getText();
             double height = Double.parseDouble(_height);
             double ray = Double.parseDouble(_ray);
             Cone cone = new Cone(height, ray);
-            cone.save(cone);
+            double contentCone = cone.calculate(cone);
+            Shape newShape = new Shape(this.name, contentCone);
+            newShape.save(newShape);
             heightField.clear();
             rayField.clear();
         });

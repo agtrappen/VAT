@@ -82,11 +82,11 @@ public class Applicatie {
         Button loadButton = new Button("Laad");
 
         // Shape list
-        ListView<String> shapeList = new ListView<String>();
-        ObservableList<String> items =FXCollections.observableArrayList (
-                "Sphere", "Block", "Cylinder", "Cone", "Pyramid");
-        shapeList.setItems(items);
-        shapeList.setMaxHeight(200);
+//        ListView<String> shapeList = new ListView<String>();
+//        ObservableList<String> item = FXCollections.observableArrayList ();
+//        shapeList.setItems(item);
+
+//        shapeList.setMaxHeight(200);
 
         // Total content button
         Button totalButton = new Button("Totale inhoud");
@@ -109,7 +109,7 @@ public class Applicatie {
         content.add(totalContentField, 0, 5);
         content.add(saveButton, 0, 7);
         content.add(loadButton, 0, 8);
-        content.add(shapeList, 10, 0, 1, 3);
+//        content.add(shapeList, 10, 0, 1, 3);
         content.add(totalButton, 10, 4);
         content.add(deleteButton, 10, 5);
         content.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
@@ -121,8 +121,8 @@ public class Applicatie {
         layout.setCenter(content);
 
 //      Get select item from the shapelist
-        shapeList.setOnMouseClicked((event)->{
-            String selectedItem = shapeList.getSelectionModel().getSelectedItem();
+        shapeOptions.setOnAction((event)->{
+            String selectedItem = shapeOptions.getSelectionModel().getSelectedItem();
             switch(selectedItem){
                 case "Sphere":
                     this.shapeStage.setScene(sphereScene);

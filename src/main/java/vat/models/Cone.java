@@ -9,7 +9,7 @@ public class Cone {
         this.ray = ray;
     }
 
-    public void save(Cone cone) {
-        System.out.println(cone);
+    public double calculate(Cone cone){
+        return cone.height * cone.ray;
     }
 }
