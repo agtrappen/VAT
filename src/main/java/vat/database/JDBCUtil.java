@@ -15,6 +15,7 @@ public class JDBCUtil {
     private static final String DATABASE_PASSWORD = "";
     private static final String INSERT_QUERY = "UPDATE shapes SET content=? WHERE shape_name=?";
     private static final String SELECT_QUERY = "SELECT * FROM shapes";
+    private static final String DELETE_QUERY = "DELETE FROM Users WHERE shape_name=?";
 
     public void insertShape(Double content, String shapeName) throws SQLException {
 
@@ -61,6 +62,19 @@ public class JDBCUtil {
             desktop.open(new File(csvFilePath));
         } catch (SQLException | IOException e) {
             printSQLException((SQLException) e);
+        }
+    }
+
+    public void deleteShape(String shapeName) throws SQLException {
+
+        try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_QUERY))
+        {
+            preparedStatement.setString(1, shapeName);
+
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            printSQLException(e);
         }
     }
 
