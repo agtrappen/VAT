@@ -160,6 +160,14 @@ public class Applicatie {
             this.shapeStage.setScene(exportScene);
             this.shapeStage.show();
         });
+
+        deleteButton.setOnAction((event) -> {
+            try {
+                deleteShape(shapeOptions.getSelectionModel().getSelectedItem());
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
     }
 
 
@@ -172,11 +180,7 @@ public class Applicatie {
         db.insertShape(contentValue, shapeName);
     }
 
-    public void showContentShape() {
-
-    }
-
-    public void deleteShape() {
-
+    public void deleteShape(String shapeName) throws SQLException {
+        db.deleteShape(shapeName);
     }
 }

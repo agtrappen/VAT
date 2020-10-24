@@ -15,8 +15,14 @@ public class JDBCUtil {
     private static final String DATABASE_PASSWORD = "";
     private static final String INSERT_QUERY = "UPDATE shapes SET content=? WHERE shape_name=?";
     private static final String SELECT_QUERY = "SELECT * FROM shapes";
-    private static final String DELETE_QUERY = "DELETE FROM Users WHERE shape_name=?";
+    private static final String DELETE_QUERY = "DELETE FROM shapes WHERE shape_name=?";
 
+    /**
+     *
+     * @param content
+     * @param shapeName
+     * @throws SQLException
+     */
     public void insertShape(Double content, String shapeName) throws SQLException {
 
         try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
@@ -31,6 +37,10 @@ public class JDBCUtil {
         }
     }
 
+    /**
+     *
+     * @throws SQLException
+     */
     public void loadShapes() throws SQLException {
 
         try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
@@ -65,6 +75,11 @@ public class JDBCUtil {
         }
     }
 
+    /**
+     *
+     * @param shapeName
+     * @throws SQLException
+     */
     public void deleteShape(String shapeName) throws SQLException {
 
         try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
@@ -78,6 +93,10 @@ public class JDBCUtil {
         }
     }
 
+    /**
+     *
+     * @param ex
+     */
     public static void printSQLException(SQLException ex) {
         for (Throwable e: ex) {
             if (e instanceof SQLException) {
