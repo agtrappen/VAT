@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
 import vat.models.Block;
 import vat.models.Pyramid;
 
@@ -16,6 +17,7 @@ public class PyramidUI {
     private double length;
     private double width;
     private double height;
+    private String name;
 
     public PyramidUI() {
 
@@ -32,9 +34,10 @@ public class PyramidUI {
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
+        Button closeButton = new Button("Cancel");
         Button saveButton = new Button("OK");
 
-        buttons.getChildren().addAll(saveButton);
+        buttons.getChildren().addAll(saveButton, closeButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -56,9 +59,11 @@ public class PyramidUI {
         widthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
-//        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
-//            createShape();
-//        });
+        closeButton.setOnAction(event ->{
+            Stage stage = (Stage) closeButton.getScene().getWindow();
+            stage.close();
+        });
+
         saveButton.setOnAction(event -> {
             String _length = lengthField.getText();
             String _height = heightField.getText();
@@ -67,7 +72,10 @@ public class PyramidUI {
             double height = Double.parseDouble(_height);
             double width = Double.parseDouble(_width);
             Pyramid pyramid = new Pyramid(length, height, width);
-            pyramid.save(pyramid);
+            double contentPyramid = pyramid.calculate(pyramid);
+            Shape newShape = new Shape(this.name, contentPyramid);
+            newShape.save(newShape);
+
             lengthField.clear();
             heightField.clear();
             widthField.clear();

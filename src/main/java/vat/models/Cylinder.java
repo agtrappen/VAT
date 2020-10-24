@@ -9,7 +9,7 @@ public class Cylinder {
         this.ray = ray;
     }
 
-    public void save(Cylinder cylinder) {
-        System.out.println(cylinder);
+    public double calculate(Cylinder cylinder){
+        return cylinder.height * cylinder.ray;
     }
 }

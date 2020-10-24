@@ -11,7 +11,7 @@ public class Pyramid {
         this.width = width;
     }
 
-    public void save(Pyramid pyramid) {
-        System.out.println(pyramid);
+    public double calculate(Pyramid pyramid){
+        return pyramid.length * pyramid.height * pyramid.width;
     }
 }

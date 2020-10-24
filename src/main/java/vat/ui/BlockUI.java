@@ -1,24 +1,23 @@
 package vat.ui;
 
-import com.sun.javafx.scene.control.InputField;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
 import vat.models.Block;
 
-import javax.swing.event.ChangeListener;
 
 public class BlockUI {
     GridPane layout = new GridPane();
     private double length;
     private double width;
     private double height;
+    private String name = "Block";
 
     public BlockUI() {
 
@@ -35,9 +34,11 @@ public class BlockUI {
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
+        Button closeButton = new Button("Cancel");
         Button saveButton = new Button("OK");
 
-        buttons.getChildren().addAll(saveButton);
+
+        buttons.getChildren().addAll(saveButton, closeButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -59,9 +60,11 @@ public class BlockUI {
         widthLabel.setStyle("-fx-text-fill: #ffff; -fx-font-weight: bold");
 
 //      Set listeners
-//        saveButton.addEventHandler(MouseEvent.MOUSE_CLICKED, (event)->{
-//            createShape();
-//        });
+        closeButton.setOnAction(event ->{
+            Stage stage = (Stage) closeButton.getScene().getWindow();
+            stage.close();
+        });
+
         saveButton.setOnAction(event -> {
             String _length = lengthField.getText();
             String _height = heightField.getText();
@@ -70,7 +73,10 @@ public class BlockUI {
             double height = Double.parseDouble(_height);
             double width = Double.parseDouble(_width);
             Block block = new Block(length, height, width);
-            block.save(block);
+            double contentBlock = block.calculate(block);
+            Shape newShape = new Shape(this.name, contentBlock);
+            newShape.save(newShape);
+
             lengthField.clear();
             heightField.clear();
             widthField.clear();
@@ -78,8 +84,3 @@ public class BlockUI {
         return this.layout;
     }
 }
-
-
-//    public void createShape(){
-//        Block test = new Block(this.length, this.height, this.width);
-//    }

@@ -10,8 +10,7 @@ public class Block {
         this.height = height;
         this.width = width;
     }
-
-    public void save(Block block) {
-        System.out.println(block.length + block.height + block.width);
+    public double calculate(Block block){
+        return block.length * block.height * block.width;
     }
 }
