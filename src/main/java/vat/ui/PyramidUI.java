@@ -17,7 +17,7 @@ public class PyramidUI {
     private double length;
     private double width;
     private double height;
-    private String name = "Pyramid";
+    private final String name = "Pyramid";
 
     public PyramidUI() {
 

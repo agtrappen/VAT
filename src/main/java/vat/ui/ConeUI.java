@@ -17,7 +17,7 @@ public class ConeUI {
     GridPane layout = new GridPane();
     private double ray;
     private double height;
-    private String name = "Cone";
+    private final String name = "Cone";
 
     public ConeUI(){
 
@@ -73,9 +73,5 @@ public class ConeUI {
         });
 
         return this.layout;
-    }
-
-    public void createShape(){
-
     }
 }

@@ -4,16 +4,17 @@ import vat.database.JDBCUtil;
 
 import java.sql.SQLException;
 
-public class Shape {
+public class Shape implements Methods {
     private String shapeName;
     private double content;
     private Shape shape;
-    private JDBCUtil db = new JDBCUtil();
+    private final JDBCUtil db = new JDBCUtil();
 
     public Shape(String shapeName, double content){
         this.shapeName = shapeName;
         this.content = content;
     }
+
 
     public void save(Shape shape){
         try {

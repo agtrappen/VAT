@@ -14,7 +14,7 @@ public class CylinderUI {
     GridPane layout = new GridPane();
     private double ray;
     private double height;
-    private String name = "Cylinder";
+    private final String name = "Cylinder";
 
     public CylinderUI() {
 

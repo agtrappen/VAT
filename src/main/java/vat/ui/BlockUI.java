@@ -13,12 +13,12 @@ import vat.models.Block;
 import vat.models.Shape;
 
 
-public class BlockUI {
+public class BlockUI  {
     GridPane layout = new GridPane();
     private double length;
     private double width;
     private double height;
-    private String name = "Block";
+    private final String name = "Block";
 
     public BlockUI() {
 

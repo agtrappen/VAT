@@ -15,7 +15,7 @@ import vat.models.Sphere;
 public class SphereUI {
     GridPane layout = new GridPane();
     private double ray;
-    private String name = "Sphere";
+    private final String name = "Sphere";
 
     public SphereUI(){
 

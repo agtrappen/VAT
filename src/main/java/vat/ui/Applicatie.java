@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class Applicatie {
     private Stage shapeStage;
     private BorderPane layout;
-    private JDBCUtil db = new JDBCUtil();
+    private final JDBCUtil db = new JDBCUtil();
 
     public Applicatie() throws SQLException {
         GridPane content = new GridPane();

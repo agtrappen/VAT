@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 public class ExportUI {
-    private JDBCUtil db = new JDBCUtil();
+    private final JDBCUtil db = new JDBCUtil();
 
     public Parent getView() {
         GridPane layout = new GridPane();
