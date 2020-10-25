@@ -23,18 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="changed classes&#10;added models">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vat/ui/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cylinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/Applicatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/Applicatie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,8 @@
       <workItem from="1603297661542" duration="6648000" />
       <workItem from="1603312450286" duration="22341000" />
       <workItem from="1603395749310" duration="17025000" />
+      <workItem from="1603562603433" duration="2283000" />
+      <workItem from="1603628546868" duration="988000" />
     </task>
     <task id="LOCAL-00001" summary="added all shapes">
       <created>1603318874394</created>
@@ -187,30 +190,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="545" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312779593" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1603554282060">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.bottom" timestamp="1603560481884">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603554282060" />
     <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603305271871" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1603554282060">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603560481884" />
+    <state width="1878" height="261" key="GridCell.Tab.0.center" timestamp="1603560481883">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603554282060" />
     <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1603305271869" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1603554282060">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1603560481883" />
+    <state width="1878" height="261" key="GridCell.Tab.0.left" timestamp="1603560481883">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603554282060" />
     <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652240" />
-    <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1603305271869" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1603554282060">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1603560481883" />
+    <state width="1878" height="261" key="GridCell.Tab.0.right" timestamp="1603560481884">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603554282060" />
     <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1603305271870" />
+    <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1603560481884" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1603394652242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -242,9 +245,6 @@
     </state>
     <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603401810848" />
     <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394639456" />
-    <state x="773" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603298311869">
-      <screen x="0" y="23" width="1920" height="970" />
-    </state>
     <state x="682" y="406" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.970@0.23.1920.970" timestamp="1603540860551" />
     <state x="773" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603478973708">
       <screen x="0" y="23" width="1920" height="970" />
