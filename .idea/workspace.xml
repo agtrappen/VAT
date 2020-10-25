@@ -23,37 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="changed classes&#10;added models">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shapes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/shapes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vat/database/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/database/JDBCUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/Applicatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/Applicatie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/ExportUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/ExportUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/vat/database/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/database/JDBCUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Block.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/ExportUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/ExportUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +41,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -79,7 +56,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -98,6 +75,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-sdk-11.0.2/lib/javafx.web.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -106,18 +85,127 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="vat.models" />
+      <recent name="vat.database" />
+      <recent name="vat.ui" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ShapeTest.save">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlockTest.calculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vat.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vat.models" />
+      <option name="MAIN_CLASS_NAME" value="vat.models.BlockTest" />
+      <option name="METHOD_NAME" value="calculate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CylinderTest.calculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vat.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vat.models" />
+      <option name="MAIN_CLASS_NAME" value="vat.models.CylinderTest" />
+      <option name="METHOD_NAME" value="calculate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PyramidTest.calculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vat.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vat.models" />
+      <option name="MAIN_CLASS_NAME" value="vat.models.PyramidTest" />
+      <option name="METHOD_NAME" value="calculate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShapeTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vat.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vat.models" />
+      <option name="MAIN_CLASS_NAME" value="vat.models.ShapeTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SphereTest.calculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VAT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vat.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vat.models" />
+      <option name="MAIN_CLASS_NAME" value="vat.models.SphereTest" />
+      <option name="METHOD_NAME" value="calculate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.VAT" />
+      <item itemvalue="JUnit.BlockTest.calculate" />
+      <item itemvalue="JUnit.CylinderTest.calculate" />
+      <item itemvalue="JUnit.PyramidTest.calculate" />
+      <item itemvalue="JUnit.SphereTest.calculate" />
+      <item itemvalue="JUnit.ShapeTest.save" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShapeTest.save" />
+        <item itemvalue="JUnit.SphereTest.calculate" />
+        <item itemvalue="JUnit.PyramidTest.calculate" />
+        <item itemvalue="JUnit.CylinderTest.calculate" />
+        <item itemvalue="JUnit.BlockTest.calculate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -193,21 +281,25 @@
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="448" y="89" key="#Project_Structure/0.23.1920.970@0.23.1920.970" timestamp="1603208210152" />
-    <state x="-1535" y="-392" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603559448102">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state x="424" y="170" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603640618300">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="-1535" y="-392" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559448102" />
     <state x="274" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603314869662" />
-    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603129160909" />
-    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603565124130">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
-    </state>
-    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603565124130" />
-    <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser/0.23.1920.970@0.23.1920.970" timestamp="1603303060134" />
-    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603128970003">
+    <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603640618300" />
+    <state x="100" y="123" width="1720" height="770" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1603639980149">
       <screen x="0" y="23" width="1920" height="970" />
     </state>
-    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.970@0.23.1920.970" timestamp="1603128970003" />
+    <state x="100" y="123" width="1720" height="770" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.970@0.23.1920.970" timestamp="1603639980149" />
+    <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1603634840233">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603565124130" />
+    <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser/0.23.1920.970@0.23.1920.970" timestamp="1603634840233" />
+    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603640396102">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="697" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.970@0.23.1920.970" timestamp="1603640396102" />
     <state x="-1265" y="-42" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603400671226">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
@@ -222,73 +314,84 @@
     </state>
     <state x="-1154" y="-261" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559339689" />
     <state x="545" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312779593" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1603633016134">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.bottom" timestamp="1603641397460">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603633016134" />
     <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603305271871" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1603633016133">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603641397460" />
+    <state width="1878" height="261" key="GridCell.Tab.0.center" timestamp="1603641397459">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603633016133" />
     <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1603305271869" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1603633016133">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1603641397459" />
+    <state width="1878" height="261" key="GridCell.Tab.0.left" timestamp="1603641397459">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603633016133" />
     <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652240" />
-    <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1603305271869" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1603633016133">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1603641397459" />
+    <state width="1878" height="261" key="GridCell.Tab.0.right" timestamp="1603641397460">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603633016133" />
     <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1603305271870" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1603394652242">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1603641397460" />
+    <state width="1878" height="323" key="GridCell.Tab.1.bottom" timestamp="1603639698055">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652242" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1603394652241">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1878" height="323" key="GridCell.Tab.1.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603639698055" />
+    <state width="1878" height="323" key="GridCell.Tab.1.center" timestamp="1603639698054">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1603394652241">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1878" height="323" key="GridCell.Tab.1.center/0.23.1920.970@0.23.1920.970" timestamp="1603639698054" />
+    <state width="1878" height="323" key="GridCell.Tab.1.left" timestamp="1603639698054">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652241" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1603394652242">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1878" height="323" key="GridCell.Tab.1.left/0.23.1920.970@0.23.1920.970" timestamp="1603639698054" />
+    <state width="1878" height="323" key="GridCell.Tab.1.right" timestamp="1603639698054">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394652242" />
-    <state x="-1430" y="-236" key="Maven.ArtifactSearchDialog" timestamp="1603559265031">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state width="1878" height="323" key="GridCell.Tab.1.right/0.23.1920.970@0.23.1920.970" timestamp="1603639698054" />
+    <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1603633754958">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state width="221" height="457" key="HiddenNamespacesPopup/0.23.1920.970@0.23.1920.970" timestamp="1603633754958" />
+    <state x="490" y="186" key="Maven.ArtifactSearchDialog" timestamp="1603634086178">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="-1430" y="-236" key="Maven.ArtifactSearchDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559265031" />
+    <state x="490" y="186" key="Maven.ArtifactSearchDialog/0.23.1920.970@0.23.1920.970" timestamp="1603634086178" />
     <state x="129" y="55" key="MergeDialog" timestamp="1603312730077">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312730077" />
-    <state x="-1472" y="-411" key="SettingsEditor" timestamp="1603561275263">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state x="21" y="78" key="SettingsEditor" timestamp="1603639858375">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="-1472" y="-411" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603561275263" />
     <state x="319" y="0" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312786958" />
-    <state x="448" y="89" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603129117045" />
+    <state x="21" y="78" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603639858375" />
     <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2" timestamp="1603401810848">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
     <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603401810848" />
     <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394639456" />
-    <state x="-1061" y="-14" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1603559472539">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state x="859" y="393" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1603633774086">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="-1061" y="-14" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559472539" />
-    <state x="-1117" y="-118" width="1087" height="619" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603561585263">
-      <screen x="-1920" y="-411" width="1920" height="1040" />
+    <state x="859" y="393" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1920.970@0.23.1920.970" timestamp="1603633774086" />
+    <state x="583" y="196" width="1087" height="619" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603633818164">
+      <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="-1117" y="-118" width="1087" height="619" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603561585263" />
+    <state x="583" y="196" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1920.970@0.23.1920.970" timestamp="1603633818164" />
     <state x="-1248" y="-94" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603561266033">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
@@ -298,6 +401,10 @@
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="773" y="429" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.970@0.23.1920.970" timestamp="1603478973708" />
+    <state x="1255" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603641598315">
+      <screen x="0" y="23" width="1920" height="970" />
+    </state>
+    <state x="1255" y="131" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1920.970@0.23.1920.970" timestamp="1603641598315" />
     <state x="360" y="77" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603312704887">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

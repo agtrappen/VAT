@@ -42,6 +42,11 @@ public class JDBCUtil {
         }
     }
 
+    /**
+     *
+     * @return
+     * @throws SQLException
+     */
     public String getTotalContent() throws SQLException {
         String resultSum = "";
         try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
@@ -58,8 +63,11 @@ public class JDBCUtil {
         return resultSum;
     }
 
-
-
+    /**
+     *
+     * @return
+     * @throws SQLException
+     */
     public ObservableList<String> getShape() throws SQLException {
 
         ObservableList<String> list = FXCollections.observableArrayList();
@@ -120,6 +128,12 @@ public class JDBCUtil {
         }
     }
 
+    /**
+     *
+     * @param file
+     * @throws FileNotFoundException
+     * @throws SQLException
+     */
     public void loadFile(String file) throws FileNotFoundException, SQLException {
         try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_QUERY))

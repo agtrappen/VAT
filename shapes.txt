@@ -1,0 +1,15 @@
+id,content,shape_name
+"2",5.0,Sphere
+"3",5.0,Cone
+"4",5.0,Cylinder
+"6",33.0,Block
+"7",666.0,Block
+"8",666.0,Block
+"9",666.0,Block
+"10",666.0,Block
+"11",666.0,Block
+"12",666.0,Block
+"13",666.0,Block
+"14",666.0,Block
+"15",666.0,Block
+"16",1452.0,Block
