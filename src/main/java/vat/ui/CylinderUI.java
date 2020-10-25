@@ -7,9 +7,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import vat.models.Block;
-import vat.models.Cone;
 import vat.models.Cylinder;
+import vat.models.Shape;
 
 public class CylinderUI {
     GridPane layout = new GridPane();

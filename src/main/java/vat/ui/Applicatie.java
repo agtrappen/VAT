@@ -2,27 +2,23 @@ package vat.ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import vat.database.JDBCUtil;
 
 import java.sql.SQLException;
-import vat.models.Block;
 
-//Application
 public class Applicatie {
     private Stage shapeStage;
     private BorderPane layout;
     private JDBCUtil db = new JDBCUtil();
 
-    public Applicatie(){
+    public Applicatie() throws SQLException {
         GridPane content = new GridPane();
         SphereUI sphereView = new SphereUI();
         BlockUI blockView = new BlockUI();
@@ -78,13 +74,12 @@ public class Applicatie {
         TextField totalContentField = new TextField();
 
         // Left action buttons
+        Button reloadButton = new Button("Reload");
         Button saveButton = new Button("Opslaan");
-        Button loadButton = new Button("Laad");
+        Button loadButton = new Button("Laad CSV");
 
-        // Shape list
-//        ListView<String> shapeList = new ListView<String>();
-//        ObservableList<String> item = FXCollections.observableArrayList ();
-//        shapeList.setItems(item);
+        ListView shapeList = new ListView();
+        shapeList.setItems(getShape());
 
 //        shapeList.setMaxHeight(200);
 
@@ -107,9 +102,10 @@ public class Applicatie {
         content.add(contentField, 0, 3);
         content.add(totalContentLabel, 0, 4);
         content.add(totalContentField, 0, 5);
+        content.add(reloadButton, 10, 3);
         content.add(saveButton, 0, 7);
         content.add(loadButton, 0, 8);
-//        content.add(shapeList, 10, 0, 1, 3);
+        content.add(shapeList, 10, 0, 1, 3);
         content.add(totalButton, 10, 4);
         content.add(deleteButton, 10, 5);
         content.setStyle("-fx-background-image: url('https://ak.picdn.net/shutterstock/videos/3605567/thumb/1.jpg');");
@@ -149,6 +145,23 @@ public class Applicatie {
             }
         });
 
+        totalButton.setOnMouseClicked(mouseEvent -> {
+            try {
+                totalContentField.setText(getTotalContent());
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
+
+
+        reloadButton.setOnMouseClicked(mouseEvent -> {
+            try {
+                shapeList.setItems(getShape());
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
+
         saveButton.setOnAction((event) -> {
             try {
                 saveShape(shapeOptions.getSelectionModel().getSelectedItem(), Double.valueOf(contentField.getText()));
@@ -164,24 +177,36 @@ public class Applicatie {
 
         deleteButton.setOnAction((event) -> {
             try {
-                deleteShape(shapeOptions.getSelectionModel().getSelectedItem());
+                String test = (String) shapeList.getSelectionModel().getSelectedItem();
+                int id = Integer.parseInt(test.split(" ")[0]);
+                deleteShape(id);
+
+//              Update listview
+                shapeList.setItems(getShape());
+                getShape();
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
         });
     }
-
+    public String getTotalContent() throws SQLException {
+        return db.getTotalContent();
+    }
 
     public Parent getView() {
 //        Locatie van listeners
         return this.layout;
     }
 
+    public ObservableList getShape() throws SQLException {
+        return db.getShape();
+    }
+
     public void saveShape(String shapeName, Double contentValue) throws SQLException {
         db.insertShape(contentValue, shapeName);
     }
 
-    public void deleteShape(String shapeName) throws SQLException {
-        db.deleteShape(shapeName);
+    public void deleteShape(Integer id) throws SQLException {
+        db.deleteShape(id);
     }
 }

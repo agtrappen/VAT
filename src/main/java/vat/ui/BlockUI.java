@@ -10,6 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import vat.models.Block;
+import vat.models.Shape;
 
 
 public class BlockUI {

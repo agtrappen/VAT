@@ -8,6 +8,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import vat.database.JDBCUtil;
 
+import java.io.FileNotFoundException;
 import java.sql.SQLException;
 
 public class ExportUI {
@@ -19,9 +20,12 @@ public class ExportUI {
         HBox buttons = new HBox();
         buttons.setSpacing(10);
 
-        Button saveButton = new Button("Export csv");
+        Button saveCsvButton = new Button("Export csv");
+        Button saveTxtButton = new Button("Export txt");
+        Button readCsvButton = new Button("Read csv");
+        Button readTxtButton = new Button("Read txt");
 
-        buttons.getChildren().add(saveButton);
+        buttons.getChildren().addAll(saveCsvButton, saveTxtButton, readCsvButton, readTxtButton);
 
         // Styling
         layout.setAlignment(Pos.CENTER);
@@ -33,9 +37,33 @@ public class ExportUI {
         // Set components
         layout.add(buttons, 0, 2);
 
-        saveButton.setOnAction((event) -> {
+        readCsvButton.setOnAction((event) -> {
             try {
-                loadShape();
+                loadFile("csv");
+            } catch (FileNotFoundException | SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
+
+        readTxtButton.setOnAction((event) -> {
+            try {
+                loadFile("txt");
+            } catch (FileNotFoundException | SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
+
+        saveCsvButton.setOnAction((event) -> {
+            try {
+                loadShape("csv");
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        });
+
+        saveTxtButton.setOnAction((event) -> {
+            try {
+                loadShape("txt");
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
@@ -44,7 +72,11 @@ public class ExportUI {
         return layout;
     }
 
-    public void loadShape() throws SQLException {
-        db.loadShapes();
+    public void loadShape(String file) throws SQLException {
+        db.loadShapes(file);
+    }
+
+    public void loadFile(String file) throws FileNotFoundException, SQLException {
+        db.loadFile(file);
     }
 }

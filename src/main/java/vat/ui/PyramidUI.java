@@ -9,15 +9,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import vat.models.Block;
 import vat.models.Pyramid;
+import vat.models.Shape;
 
 public class PyramidUI {
     GridPane layout = new GridPane();
     private double length;
     private double width;
     private double height;
-    private String name;
+    private String name = "Pyramid";
 
     public PyramidUI() {
 

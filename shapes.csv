@@ -1,6 +1,14 @@
 id,content,shape_name
-"1",555.0, Block
-"2",5.0, Sphere
-"3",5.0, Cone
-"4",5.0, Cylinder
-"5",5.0, Pyramid
+"1",78.0,Block
+"2",5.0,Sphere
+"8",8.0,Block
+"10",6.0,Block
+"11",105.0,Block
+"12",8.0,Cone
+"14",15.0,Cone
+"15",10.0,Cone
+"16",4.0,Sphere
+"18",24.0,null
+"20",55.0,Sphere
+"21",5808.0,Block
+"22",45.0,Cylinder
