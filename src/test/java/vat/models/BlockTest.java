@@ -6,11 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class  BlockTest {
-//
-//    @Disabled
-//    @Test
-//    void calculate() {
-//        Block block = new Block(20, 20, 20);
-//        assertEquals(8000.0, block.calculate(block));
-//    }
+
+    @Test
+    void calculate() {
+        Block block = new Block(20, 20, 20);
+        assertEquals(8000.0, block.getContent());
+    }
 }

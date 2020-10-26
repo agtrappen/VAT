@@ -5,7 +5,7 @@ public class Cone extends Shape{
     private double ray;
 
     public Cone(double height, double ray, double pie){
-        super("Cone", Math.round(pie * (ray * ray) * height / 3));
+        super("Cone", (double) Math.round(pie * (ray * ray) * height / 3 * 100) / 100);
         this.height = height;
         this.ray = ray;
     }
