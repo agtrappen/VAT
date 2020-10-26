@@ -1,17 +1,12 @@
 package vat.models;
 
-public class Cone {
+public class Cone extends Shape{
     private double height;
     private double ray;
-    private double pie;
 
-    public Cone(double height, double ray){
+    public Cone(double height, double ray, double pie){
+        super("Cone", Math.round(pie * (ray * ray) * height / 3));
         this.height = height;
         this.ray = ray;
-        this.pie = 3.141592653;
-    }
-
-    public double calculate(Cone cone){
-        return Math.round(pie * (cone.ray * cone.ray) * cone.height / 3);
     }
 }

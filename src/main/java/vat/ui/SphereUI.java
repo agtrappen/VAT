@@ -14,8 +14,6 @@ import vat.models.Sphere;
 
 public class SphereUI {
     GridPane layout = new GridPane();
-    private double ray;
-    private final String name = "Sphere";
 
     public SphereUI(){
 
@@ -56,9 +54,7 @@ public class SphereUI {
             String _ray = rayField.getText();
             double ray = Double.parseDouble(_ray);
             Sphere sphere = new Sphere(ray);
-            double contentSphere = sphere.calculate(sphere);
-            Shape newShape = new Shape(this.name, contentSphere);
-            newShape.save(newShape);
+            sphere.save();
             rayField.clear();
         });
 

@@ -14,10 +14,6 @@ import vat.models.Shape;
 
 public class PyramidUI {
     GridPane layout = new GridPane();
-    private double length;
-    private double width;
-    private double height;
-    private final String name = "Pyramid";
 
     public PyramidUI() {
 
@@ -72,9 +68,7 @@ public class PyramidUI {
             double height = Double.parseDouble(_height);
             double width = Double.parseDouble(_width);
             Pyramid pyramid = new Pyramid(length, height, width);
-            double contentPyramid = pyramid.calculate(pyramid);
-            Shape newShape = new Shape(this.name, contentPyramid);
-            newShape.save(newShape);
+            pyramid.save();
 
             lengthField.clear();
             heightField.clear();

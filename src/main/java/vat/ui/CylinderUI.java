@@ -12,9 +12,6 @@ import vat.models.Shape;
 
 public class CylinderUI {
     GridPane layout = new GridPane();
-    private double ray;
-    private double height;
-    private final String name = "Cylinder";
 
     public CylinderUI() {
 
@@ -62,9 +59,7 @@ public class CylinderUI {
             double height = Double.parseDouble(_height);
             double ray = Double.parseDouble(_ray);
             Cylinder cylinder = new Cylinder(height, ray);
-            double contentCylinder = cylinder.calculate(cylinder);
-            Shape newShape = new Shape(this.name, contentCylinder);
-            newShape.save(newShape);
+            cylinder.save();
 
             heightField.clear();
             rayField.clear();

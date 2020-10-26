@@ -10,14 +10,11 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import vat.models.Cone;
-import vat.models.Shape;
 
 
 public class ConeUI {
     GridPane layout = new GridPane();
-    private double ray;
-    private double height;
-    private final String name = "Cone";
+    private final double pie = 3.141592653;
 
     public ConeUI(){
 
@@ -64,10 +61,8 @@ public class ConeUI {
             String _ray = rayField.getText();
             double height = Double.parseDouble(_height);
             double ray = Double.parseDouble(_ray);
-            Cone cone = new Cone(height, ray);
-            double contentCone = cone.calculate(cone);
-            Shape newShape = new Shape(this.name, contentCone);
-            newShape.save(newShape);
+            Cone cone = new Cone(height, ray, pie);
+            cone.save();
             heightField.clear();
             rayField.clear();
         });

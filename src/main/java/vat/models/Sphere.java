@@ -1,13 +1,10 @@
 package vat.models;
 
-public class Sphere {
+public class Sphere extends Shape{
     private double ray;
 
     public Sphere(double ray){
+        super("Sphere", ray);
         this.ray = ray;
-    }
-
-    public double calculate(Sphere sphere){
-        return sphere.ray;
     }
 }

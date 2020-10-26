@@ -13,12 +13,8 @@ import vat.models.Block;
 import vat.models.Shape;
 
 
-public class BlockUI  {
+public class BlockUI {
     GridPane layout = new GridPane();
-    private double length;
-    private double width;
-    private double height;
-    private final String name = "Block";
 
     public BlockUI() {
 
@@ -74,9 +70,7 @@ public class BlockUI  {
             double height = Double.parseDouble(_height);
             double width = Double.parseDouble(_width);
             Block block = new Block(length, height, width);
-            double contentBlock = block.calculate(block);
-            Shape newShape = new Shape(this.name, contentBlock);
-            newShape.save(newShape);
+            block.save();
 
             lengthField.clear();
             heightField.clear();

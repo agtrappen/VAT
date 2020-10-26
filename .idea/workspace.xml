@@ -22,13 +22,48 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="changed classes&#10;added models">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vat/models/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="9ecce22d-7758-44d1-a749-896a23e0f64e" name="Default Changelist" comment="made variables final&#10;added interface">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/VAT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Pyramid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/models/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/models/Sphere.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/BlockUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/ConeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/CylinderUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/PyramidUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vat/ui/SphereUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/BlockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/ConeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/ConeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/CylinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/CylinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/PyramidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/PyramidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/ShapeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/ShapeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vat/models/SphereTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vat/models/SphereTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Block.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Block.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Pyramid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/models/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/Applicatie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/BlockUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/ConeUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/CylinderUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/ExportUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/ExportUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/PyramidUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/vat/ui/SphereUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/BlockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/BlockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/ConeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/ConeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/CylinderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/CylinderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/PyramidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/PyramidTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vat/models/SphereTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vat/models/SphereTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +129,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShapeTest.save">
+  <component name="RunManager" selected="Application.VAT">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -251,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603401806231</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="made variables final&#10;added interface">
+      <created>1603658080907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603658080907</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,27 +315,28 @@
     <MESSAGE value="added all shapes" />
     <MESSAGE value="changed classes" />
     <MESSAGE value="changed classes&#10;added models" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed classes&#10;added models" />
+    <MESSAGE value="made variables final&#10;added interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="made variables final&#10;added interface" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="89" key="#Project_Structure" timestamp="1603208210152">
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="448" y="89" key="#Project_Structure/0.23.1920.970@0.23.1920.970" timestamp="1603208210152" />
-    <state x="424" y="170" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603640618300">
-      <screen x="0" y="23" width="1920" height="970" />
+    <state x="-1535" y="-392" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603704568068">
+      <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state x="-1535" y="-392" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559448102" />
+    <state x="-1535" y="-392" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704568068" />
     <state x="274" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603314869662" />
     <state x="424" y="170" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.970@0.23.1920.970" timestamp="1603640618300" />
     <state x="100" y="123" width="1720" height="770" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1603639980149">
       <screen x="0" y="23" width="1920" height="970" />
     </state>
     <state x="100" y="123" width="1720" height="770" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1920.970@0.23.1920.970" timestamp="1603639980149" />
-    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603656817081">
+    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser" timestamp="1603658396496">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603656817081" />
+    <state x="-1147" y="-188" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603658396496" />
     <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser/0.23.1920.970@0.23.1920.970" timestamp="1603634840233" />
     <state x="496" y="212" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603650120778">
       <screen x="0" y="0" width="1366" height="728" />
@@ -309,33 +352,37 @@
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
     <state x="-1230" y="-144" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603553971830" />
-    <state x="-1154" y="-261" key="FileChooserDialogImpl" timestamp="1603559339689">
+    <state x="-1155" y="-110" key="DetectedRootsChooserDialog" timestamp="1603704239132">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state x="-1154" y="-261" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559339689" />
+    <state x="-1155" y="-110" key="DetectedRootsChooserDialog/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704239132" />
+    <state x="-1154" y="-261" key="FileChooserDialogImpl" timestamp="1603704234862">
+      <screen x="-1920" y="-411" width="1920" height="1040" />
+    </state>
+    <state x="-1154" y="-261" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704234862" />
     <state x="545" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312779593" />
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1603656589290">
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom" timestamp="1603704335914">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603656589290" />
+    <state width="1877" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704335914" />
     <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603650138995" />
     <state width="1878" height="261" key="GridCell.Tab.0.bottom/0.23.1920.970@0.23.1920.970" timestamp="1603641397460" />
-    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1603656589289">
+    <state width="1877" height="259" key="GridCell.Tab.0.center" timestamp="1603704335914">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603656589289" />
+    <state width="1877" height="259" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704335914" />
     <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603650138994" />
     <state width="1878" height="261" key="GridCell.Tab.0.center/0.23.1920.970@0.23.1920.970" timestamp="1603641397459" />
-    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1603656589289">
+    <state width="1877" height="259" key="GridCell.Tab.0.left" timestamp="1603704335913">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603656589289" />
+    <state width="1877" height="259" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704335913" />
     <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603650138994" />
     <state width="1878" height="261" key="GridCell.Tab.0.left/0.23.1920.970@0.23.1920.970" timestamp="1603641397459" />
-    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1603656589289">
+    <state width="1877" height="259" key="GridCell.Tab.0.right" timestamp="1603704335914">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603656589289" />
+    <state width="1877" height="259" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704335914" />
     <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603650138995" />
     <state width="1878" height="261" key="GridCell.Tab.0.right/0.23.1920.970@0.23.1920.970" timestamp="1603641397460" />
     <state width="1878" height="323" key="GridCell.Tab.1.bottom" timestamp="1603639698055">
@@ -371,21 +418,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="129" y="55" key="MergeDialog/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603312730077" />
-    <state x="319" y="0" key="SettingsEditor" timestamp="1603649858941">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="-1472" y="-411" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603561275263" />
-    <state x="319" y="0" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603649858941" />
-    <state x="21" y="78" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603639858375" />
-    <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2" timestamp="1603401810848">
+    <state x="-1472" y="-411" key="SettingsEditor" timestamp="1603704460275">
       <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603401810848" />
-    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394639456" />
-    <state x="859" y="393" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1603633774086">
-      <screen x="0" y="23" width="1920" height="970" />
+    <state x="-1472" y="-411" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704460275" />
+    <state x="319" y="0" key="SettingsEditor/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603649858941" />
+    <state x="21" y="78" key="SettingsEditor/0.23.1920.970@0.23.1920.970" timestamp="1603639858375" />
+    <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2" timestamp="1603658083615">
+      <screen x="-1920" y="-411" width="1920" height="1040" />
     </state>
-    <state x="-1061" y="-14" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603559472539" />
+    <state x="-1533" y="-291" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603658083615" />
+    <state x="275" y="84" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.-411.1920.1040@0.0.1366.728" timestamp="1603394639456" />
+    <state x="-1061" y="-14" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1603704539017">
+      <screen x="-1920" y="-411" width="1920" height="1040" />
+    </state>
+    <state x="-1061" y="-14" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728/-1920.-411.1920.1040@-1920.-411.1920.1040" timestamp="1603704539017" />
     <state x="859" y="393" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1920.970@0.23.1920.970" timestamp="1603633774086" />
     <state x="583" y="196" width="1087" height="619" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603633818164">
       <screen x="0" y="23" width="1920" height="970" />
